@@ -1,4 +1,8 @@
 <?php
+
+namespace Cloudmanic\RobinHood;
+  
+use GuzzleHttp\Client;
   
 class RobinHoodObj
 {
@@ -32,7 +36,22 @@ class RobinHoodObj
   //
   public function auth($username, $password)
   {
-    echo $this->endpoints['login'];
+    $client = new Client();    
+    
+    $res = $client->post($this->endpoints['login'], [
+      'form_params' => [
+        'username' => $username,
+        'password' => $password
+      ]
+    ]);
+
+    echo $res->getStatusCode();
+
+    echo $res->getHeader('content-type');
+
+    echo $res->getBody();   
+    
+
   }
 }
 
