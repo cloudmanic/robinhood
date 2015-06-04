@@ -19,8 +19,8 @@
     },    
     
     "autoload": {
-      "psr-4": [
-        "Cloudmanic\RobinHood": "src/"
-      ]
+      "psr-4": {
+        "Cloudmanic\\RobinHood": "src/"
+      }
     }
 }
