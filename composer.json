@@ -2,7 +2,12 @@
     "name": "cloudmanic/robinhood",
     
     "description": "Wrapper to the Robinhood API",
+    
     "license": "MIT",
+    
+	"homepage": "https://cloudmanic.com",
+
+	"minimum-stability": "dev",    
     
     "authors": [
         {
