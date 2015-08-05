@@ -118,7 +118,7 @@ class RobinHoodObj
   // Return the positions. We pass in the positions URL we get from the get_accounts() request.
   // This is sort of a heavy call as it makes many API calls to populate all the data.
   //
-  public function get_current_postions($url)
+  public function get_current_positions($url)
   {
     $rt = [];
     
